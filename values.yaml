@@ -32,10 +32,10 @@ master:
       targetPort: 25565
   
   image:
-    repository: "remcospigot/multipaper-master"
+    repository: "alexohneander/multipaper-master"
     # Tag of the Docker image to be used.
     # Defaults to the Chart's app version if left blank.
-    tag: "2.8.8"
+    tag: "v0.1.0"
     pullPolicy: IfNotPresent
 
   # Configure the Update Strategy Type for the StatefulSet
@@ -134,10 +134,10 @@ server:
   uid: 1001
 
   image:
-    repository: "remcospigot/multipaper"
+    repository: "alexohneander/multipaper-server"
     # Tag of the Docker image to be used.
     # Defaults to the Chart's app version if left blank.
-    tag: "1.18.2-95"
+    tag: "v0.1.0"
     pullPolicy: IfNotPresent
 
   resources: {}
